@@ -332,8 +332,8 @@ FUNCTION {format.names}
     { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't :=
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 % This highlights my name in bold if I'm an author
-      t "Todd Gamblin" =
-      	{"\textbf{{\color{mylinkcolor}Todd Gamblin}}" 't :=}
+      t "Stephen Herbein" =
+      	{"\textbf{{\color{mylinkcolor}Stephen Herbein}}" 't :=}
 	{}
       if$
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1086,6 +1086,22 @@ FUNCTION {phdthesis}
   format.btitle "title" output.check
   new.block
   "PhD thesis" format.thesis.type output.nonnull
+  school "school" output.check
+  address output
+  format.date "year" output.check
+  new.block
+  note output
+  fin.entry
+}
+
+FUNCTION {thesis}
+{ output.bibitem
+  format.authors "author" output.check
+  new.block
+  title empty$ 'skip$ 'setup.inlinelink if$ % urlbst
+  format.btitle "title" output.check
+  new.block
+  "Thesis" format.thesis.type output.nonnull
   school "school" output.check
   address output
   format.date "year" output.check

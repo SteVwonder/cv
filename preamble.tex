@@ -1,4 +1,3 @@
-%!TEX root = todd-cv.tex
 %
 % This is the preamble to all versions of the CV.
 %
@@ -60,24 +59,18 @@
 % Personal data.
 %----------------------------------------------------------------------------------
 
-\firstname{Todd}
-\familyname{Gamblin}
+\firstname{Stephen}
+\familyname{Herbein}
 \title{\normalsize
 	Computer Scientist,
-%	Computer Science Group,
-	Center for Applied Scientific Computing\newline
-%	Computation Directorate\newline
-	Lawrence Livermore National Laboratory
+	Graduate Researcher\newline
+	University of Delaware
 }                       % optional
-\address{P.O. Box 808, L-557}{Livermore, CA, 94551}    % optional
-\phone{919.360.8283}                                   % optional
-%\phone{925-422-9319}                                  % optional
-%\fax{fax (optional)}                                  % optional
-\email{tgamblin@llnl.gov}                              % optional
+%\address{}{}    % optional
+\phone{302.689.3894}                                   % optional
+\email{stephen@herbein.net}                              % optional
 
-%\extrainfo{\href{http://people.llnl.gov/gamblin2}
-%  {\url{http://people.llnl.gov/gamblin2}}}
-\extrainfo{\href{http://tgamblin.github.io}{\url{http://tgamblin.github.io}}}
+\extrainfo{\href{https://herbein.net}{\url{https://herbein.net}}}
 
 %\quote{Some quote (optional)}                         % optional
 
@@ -97,7 +90,7 @@
 \newcommand{\br}{\ifinner, \else\\\fi}
 
 % Link to github projects
-\newcommand{\github}[1]{\href{https://github.com/scalability-llnl/#1}{#1}}
+\newcommand{\github}[1]{\href{https://github.com/SteVwonder/#1}{#1}}
 
 %----------------------------------------------------------------------------------
 % Bibliography Customizations.
@@ -132,13 +125,20 @@
 \newcommand{\paperSecTitle}
   {\bibsectiontitleformat{Peer Reviewed Conference \& Journal Papers}}
 \newcommand{\workshopSecTitle}
-  {\bibsectiontitleformat{Workshop Papers \& Technical Reports}}
+  {\bibsectiontitleformat{Workshop Papers}}
 \newcommand{\bookSecTitle}
   {\bibsectiontitleformat{Special Issues, Book Chapters, Articles}}
 \newcommand{\phdSecTitle}
   {\bibsectiontitleformat{Ph.D. Dissertation}}
+\newcommand{\UGThesisSecTitle}
+  {\bibsectiontitleformat{Undergraduate Senior Thesis}}
 \newcommand{\posterSecTitle}
-  {\bibsectiontitleformat{Posters \& Presentations}}
+  {\bibsectiontitleformat{Posters}}
 
-\newcites{Paper,Workshop,Book,PhD,Poster}{
-	\paperSecTitle,\workshopSecTitle,\bookSecTitle,\phdSecTitle,\posterSecTitle}
+\newcites{Paper,Workshop,Book,PhD,Poster,UGThesis}{
+	\paperSecTitle,\workshopSecTitle,\bookSecTitle,\phdSecTitle,\posterSecTitle,\UGThesisSecTitle}
+
+%%% Local Variables:
+%%% mode: plain-tex
+%%% TeX-master: "herbein-cv"
+%%% End:

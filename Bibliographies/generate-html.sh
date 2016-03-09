@@ -2,7 +2,7 @@
 
 tmpfile="tmp.html"              # name of temporary file to use
 outfile="bibliography.html"     # name of final bibliography output file
-name="Todd Gamblin"             # name to highlight in the output
+name="Stephen Herbein"             # name to highlight in the output
 
 rm -f $outfile                  # Clean things up a bit first.
 touch $outfile

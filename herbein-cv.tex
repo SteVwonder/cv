@@ -12,21 +12,21 @@
 \vspace{-3em}    % Omit if quote is included
 
 \input{Sections/education}
-\input{Sections/awards}
+\input{Sections/research-interests}
 \input{Sections/research-experience}
-\input{Sections/professional-experience}
+%\input{Sections/professional-experience}
 
-\input{Sections/grants}
-\input{Sections/time-allocations}
-\input{Sections/professional-activities-long}
 %\input{Sections/professional-activities}
 %\input{Sections/teaching}
 %\input{Sections/university-activities}
+\input{Sections/awards}
 \input{Sections/skills}
 \input{Sections/software}
+\input{Sections/services-and-volunteer}
+\input{Sections/memberships}
+
 
 \input{Sections/invited-talks}
-
 
 %----------------------------------------------------------------------------------
 %            Publications
@@ -44,18 +44,23 @@
 	\bibliographystyleWorkshop{plain-url-inline-revchron}
 	\bibliographyWorkshop{Bibliographies/Workshops}
 
-	\nociteBook{*}
-	\bibliographystyleBook{plain-url-inline-revchron}
-	\bibliographyBook{Bibliographies/Books}
+	% \nociteBook{*}
+	% \bibliographystyleBook{plain-url-inline-revchron}
+	% \bibliographyBook{Bibliographies/Books}
 
-	\nocitePhD{*}
-	\bibliographystylePhD{plain-url-inline-revchron}
-	\bibliographyPhD{Bibliographies/PhD}
+	% \nocitePhD{*}
+	% \bibliographystylePhD{plain-url-inline-revchron}
+	% \bibliographyPhD{Bibliographies/PhD}
 
 	\nocitePoster{*}
 	\bibliographystylePoster{plain-url-inline-revchron}
 	\bibliographyPoster{Bibliographies/Posters}
 
+	\nociteUGThesis{*}
+	\bibliographystyleUGThesis{plain-url-inline-revchron}
+	\bibliographyUGThesis{Bibliographies/UG-Thesis}
+
 	% Restore subsection command in case something happens after here.
 	\let\subsection\oldsubsection
+
 \end{document}

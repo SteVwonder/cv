@@ -4,7 +4,8 @@
 *.blg
 *.log
 *.out
+*.fls
+*.fdb_latexmk
 *.synctex.gz
-todd-cv.pdf
-grant-cv.pdf
-ldrd-cv.pdf
+herbein-cv.pdf
+/outdir
