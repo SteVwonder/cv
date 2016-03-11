@@ -25,6 +25,10 @@
 %            Publications
 %----------------------------------------------------------------------------------
 \section{Peer-Reviewed Publications}
+	% Put some space between bibliography sections below here.
+	\let\oldsubsection\subsection
+	\renewcommand{\subsection}[1]{\vspace{\bibliographysectionspacing}\oldsubsection{#1}}
+
 	\nociteConfPaper{*}
 	\bibliographystyleConfPaper{plain-url-inline-revchron}
 	\bibliographyConfPaper{Bibliographies/ConfPapers}
@@ -32,10 +36,6 @@
 	\nociteJournalPaper{*}
 	\bibliographystyleJournalPaper{plain-url-inline-revchron}
 	\bibliographyJournalPaper{Bibliographies/JournalPapers}
-
-	% Put some space between bibliography sections below here.
-	\let\oldsubsection\subsection
-	\renewcommand{\subsection}[1]{\vspace{\bibliographysectionspacing}\oldsubsection{#1}}
 
 	\nociteWorkshop{*}
 	\bibliographystyleWorkshop{plain-url-inline-revchron}
