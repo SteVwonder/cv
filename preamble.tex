@@ -122,8 +122,10 @@
 \renewcommand{\cventry}[6]%
 	{\oldcventry{#1}{#2}{\color{mylinkcolor}{#3}}{#4}{#5}{#6}}
 
-\newcommand{\paperSecTitle}
-  {\bibsectiontitleformat{Peer Reviewed Conference \& Journal Papers}}
+\newcommand{\journalPaperSecTitle}
+  {\bibsectiontitleformat{Journal Papers}}
+\newcommand{\confPaperSecTitle}
+  {\bibsectiontitleformat{Conference Papers}}
 \newcommand{\workshopSecTitle}
   {\bibsectiontitleformat{Workshop Papers}}
 \newcommand{\bookSecTitle}
@@ -135,8 +137,8 @@
 \newcommand{\posterSecTitle}
   {\bibsectiontitleformat{Posters}}
 
-\newcites{Paper,Workshop,Book,PhD,Poster,UGThesis}{
-	\paperSecTitle,\workshopSecTitle,\bookSecTitle,\phdSecTitle,\posterSecTitle,\UGThesisSecTitle}
+\newcites{ConfPaper,JournalPaper,Workshop,Book,PhD,Poster,UGThesis}{
+	\confPaperSecTitle,\journalPaperSecTitle,\workshopSecTitle,\bookSecTitle,\phdSecTitle,\posterSecTitle,\UGThesisSecTitle}
 
 %%% Local Variables:
 %%% mode: plain-tex
