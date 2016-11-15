@@ -24,6 +24,25 @@
 %----------------------------------------------------------------------------------
 %            Publications
 %----------------------------------------------------------------------------------
+\def\HighlightName#1{%
+  \textbf{{\color{mylinkcolor}#1}}%
+}
+
+\def\FormatName#1{%
+  \def\myname{Stephen Herbein}%
+  \def\mynamestar{Stephen Herbein*}%
+  \edef\name{#1}%
+  \ifx\name\myname
+    \HighlightName{#1}%
+  \else
+    \ifx\name\mynamestar
+      \HighlightName{#1}%
+    \else
+      #1%
+    \fi
+  \fi
+}
+
 \section{Peer-Reviewed Publications}
 	% Put some space between bibliography sections below here.
 	\let\oldsubsection\subsection

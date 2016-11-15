@@ -329,14 +329,7 @@ FUNCTION {format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ 't :=
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This highlights my name in bold if I'm an author
-      t "Stephen Herbein" =
-      	{"\textbf{{\color{mylinkcolor}Stephen Herbein}}" 't :=}
-	{}
-      if$
-%%%%%%%%%%%%%%%%%%%%%%%%%%
+    { "\FormatName{" s nameptr "{ff~}{vv~}{ll}{, jj}" format.name$ * "}" * 't :=
       nameptr #1 >
 	{ namesleft #1 >
 	    { ", " * t * }
